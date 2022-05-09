@@ -1,0 +1,36 @@
+* {
+  font-family: "Nunito", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Customize plugins here--------------------------------- */
+/* scrollUp */
+#scrollUp {
+  bottom: 20px;
+  right: 20px;
+  width: 48px;
+  height: 46px;
+  background: url(../img/pink-arrow-up.png) no-repeat;
+  border-radius: 8px;
+}
+
+/* Reponsive here */
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
+}
+
+/* Animate here -------------------------------------------*/
+@keyframes someAnimation {
+  50% {
+    transform: translateY(-50%);
+  }
+}
