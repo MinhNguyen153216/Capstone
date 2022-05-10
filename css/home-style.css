@@ -49,6 +49,7 @@ h6 {
   position: sticky;
   top: 0;
   left: 0;
+  box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
 }
 
 .header .header-bar {
@@ -124,6 +125,40 @@ h6 {
 
 .header .header-bar .navbar button {
   margin: 0 15px 0 31px;
+}
+
+.carousel {
+  background: white;
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92)),
+    url(../img/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.carousel .container {
+  padding-top: 80px;
+  display: flex;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.carousel .left-banner{
+    max-width: 50%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.carousel .right-banner{
+    max-width: 50%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.carousel .right-banner img{
+    display: block;
+    transform: rotate(180deg);
 }
 
 /* Customize plugins here--------------------------------- */
