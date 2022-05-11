@@ -22,6 +22,36 @@ h6 {
   margin: 0;
 }
 
+.title-section {
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title-section h6 {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #dc4f72;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.title-section h3 {
+  color: #2c3038;
+  font-size: 46px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.title-section p {
+  color: #5a5a5a;
+  font-size: 16px;
+  line-height: 22.5px;
+  font-weight: 400;
+  margin: 16px 0;
+}
+
 .btn-hover1 {
   font-family: "Nunito", sans-serif;
   color: #dc4f72;
@@ -46,9 +76,10 @@ h6 {
 
 .header {
   background-color: white;
-  position: sticky;
+  /* position: sticky; */
   top: 0;
   left: 0;
+  z-index: 444;
   box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
 }
 
@@ -132,7 +163,7 @@ h6 {
   background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92)),
     url(../img/banner.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -142,23 +173,105 @@ h6 {
   display: flex;
   padding-right: 25px;
   padding-left: 25px;
+  /* justify-content: center; */
+  align-items: center;
 }
 
-.carousel .left-banner{
-    max-width: 50%;
-    padding-right: 15px;
-    padding-left: 15px;
+.carousel .left-banner {
+  max-width: 50%;
+  padding-right: 15px;
+  padding-left: 0px;
 }
 
-.carousel .right-banner{
-    max-width: 50%;
-    padding-right: 15px;
-    padding-left: 15px;
+.carousel .left-banner h3 {
+  font-size: 50px;
+  line-height: 58px;
+  color: #2c3038;
+  font-weight: 700;
 }
 
-.carousel .right-banner img{
-    display: block;
-    transform: rotate(180deg);
+.carousel .left-banner p {
+  color: #5a5a5a;
+  font-size: 19px;
+  line-height: 29px;
+  font-weight: 400;
+  max-width: 450px;
+  margin-top: 16px;
+  margin-bottom: 45px;
+}
+
+.carousel .right-banner {
+  max-width: 50%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.carousel .right-banner img {
+  display: block;
+  transform: rotate(180deg);
+}
+
+.tool{
+    padding: 48px 0;
+}
+
+.tool .container{
+  padding: 24px 25px 16px 25px;
+}
+
+.tool .content {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.tool .content .item {
+  margin-top: 48px;
+  max-width: calc(100% / 3);
+  padding: 0 15px;
+}
+
+.tool .content .item .item-display {
+  background-color: #f7f9fc;
+  border: 1px solid #f7f9fc;
+  border-radius: 6px;
+  padding: 48px 32px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.tool .content .item .item-display:hover {
+    background-color: white;
+    border: 1px solid white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transform: translateY(-8px);
+    transition: 0.5s;
+}
+
+.tool .content .item .item-display a {
+  display: block;
+  text-decoration: none;
+}
+
+.tool .content .item .item-display img {
+  vertical-align: middle;
+}
+
+.tool .content .item .item-display h3 {
+  color: #2c3038;
+  font-size: 26px;
+  line-height: 35px;
+  font-weight: 700;
+  margin: 16px 0;
+}
+
+.tool .content .item .item-display p {
+  color: #5a5a5a;
+  margin-top: 15px;
+  font-size: 15px;
+  line-height: 24.5px;
 }
 
 /* Customize plugins here--------------------------------- */
