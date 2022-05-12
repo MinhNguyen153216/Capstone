@@ -25,7 +25,7 @@ h6 {
 .title-section {
   max-width: 750px;
   margin: 0 auto;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .title-section h6 {
@@ -46,7 +46,7 @@ h6 {
 
 .title-section p {
   color: #5a5a5a;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 22.5px;
   font-weight: 400;
   margin: 16px 0;
@@ -74,9 +74,32 @@ h6 {
   color: white;
 }
 
+.btn-hover2 {
+  font-family: "Nunito", sans-serif;
+  color: white;
+  border: 1px solid transparent;
+  border-color: #dc4f72;
+  background-color: #dc4f72;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  padding: 0 30px;
+  line-height: 52px;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: 0.5s;
+}
+
+.btn-hover2:hover {
+  border-color: #cf2952;
+  background-color: #d62f58;
+  color: white;
+}
+
 .header {
   background-color: white;
-  /* position: sticky; */
+  position: sticky;
   top: 0;
   left: 0;
   z-index: 444;
@@ -192,7 +215,7 @@ h6 {
 
 .carousel .left-banner p {
   color: #5a5a5a;
-  font-size: 19px;
+  font-size: 18.5px;
   line-height: 29px;
   font-weight: 400;
   max-width: 450px;
@@ -211,12 +234,16 @@ h6 {
   transform: rotate(180deg);
 }
 
-.tool{
-    padding: 48px 0;
+.tool {
+  padding: 48px 0 56px 0;
 }
 
-.tool .container{
+.tool .container {
   padding: 24px 25px 16px 25px;
+}
+
+.tool .container .title-section {
+  text-align: center;
 }
 
 .tool .content {
@@ -243,11 +270,11 @@ h6 {
 }
 
 .tool .content .item .item-display:hover {
-    background-color: white;
-    border: 1px solid white;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    transform: translateY(-8px);
-    transition: 0.5s;
+  background-color: white;
+  border: 1px solid white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-8px);
+  transition: 0.5s;
 }
 
 .tool .content .item .item-display a {
@@ -272,6 +299,106 @@ h6 {
   margin-top: 15px;
   font-size: 15px;
   line-height: 24.5px;
+}
+
+.about {
+  background-color: #f7f9fc;
+}
+
+.about .about-1 {
+  display: flex;
+  align-items: center;
+}
+
+.about .about-1 {
+  padding: 48px 0;
+}
+
+.about .about-left {
+  padding: 32px 48px 16px 25px;
+  max-width: 50%;
+}
+
+.about .about-left h6 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.about .about-left h3 {
+  font-size: 35px;
+  margin-bottom: 24px;
+  line-height: 40px;
+}
+
+.about .about-left p {
+  line-height: 24.4px;
+  font-size: 15px;
+  margin-bottom: 48px;
+}
+
+.about .about-right {
+  padding: 32px 25px 16px 48px;
+  max-width: 50%;
+}
+
+.about .about-right img {
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+}
+
+.about .about-right img:hover {
+  transform: translateY(-8px);
+  transition: 0.5s;
+}
+
+.about .about-2 {
+  display: flex;
+  padding: 19px 10px 64px 10px;
+}
+
+.about .about-2 .counterUp-number {
+  max-width: calc(100% / 3);
+  background-color: #fff;
+  padding: 32px;
+  margin: 0 15px;
+  border-radius: 6px;
+  box-shadow: 1px 5px 7.5px 0px rgba(196, 196, 196, 0.2);
+  transition: 0.3s ease;
+  border: 1px solid #eee;
+  transition: 0.5s;
+}
+
+.about .about-2 .counterUp-number:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+}
+
+.about .about-2 .counterUp-number h4 {
+  font-size: 16px;
+  line-height: 24.5px;
+  text-transform: capitalize;
+  color: #2c3038;
+  font-weight: 700;
+}
+
+.about .about-2 .counterUp-number span {
+  display: inline-block;
+  font-size: 50px;
+  line-height: 1;
+  color: #dc4f72;
+  margin-bottom: 0;
+  font-weight: 700;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.about .about-2 .counterUp-number p {
+  color: #5a5a5a;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 /* Customize plugins here--------------------------------- */
