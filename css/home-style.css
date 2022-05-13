@@ -120,7 +120,7 @@ h6 {
   color: black;
 }
 
-.label-red{
+.label-red {
   color: #dc4f72;
   background: rgba(238, 97, 120, 0.2);
   padding: 6px 15.5px;
@@ -131,7 +131,7 @@ h6 {
   margin-bottom: 15px;
 }
 
-.label-green{
+.label-green {
   color: #008000;
   background: rgba(0, 128, 0, 0.2);
   padding: 6px 15.5px;
@@ -142,7 +142,7 @@ h6 {
   margin-bottom: 15px;
 }
 
-.label-blue{
+.label-blue {
   color: #0000ff;
   background: rgba(0, 0, 255, 0.2);
   padding: 6px 15.5px;
@@ -155,7 +155,7 @@ h6 {
 
 .header {
   background-color: white;
-  /* position: sticky; */
+  position: sticky;
   top: 0;
   left: 0;
   z-index: 444;
@@ -636,6 +636,160 @@ h6 {
 
 .solution .item-info:hover i {
   right: -16px;
+  transition: 0.5s;
+}
+
+.qa {
+  background-color: #f7f9fc;
+  padding: 48px 0;
+}
+
+.qa .container {
+  padding: 48px 25px;
+}
+
+.qa .title-section {
+  text-align: center;
+}
+
+.qa .qa-section {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px 0 -15px;
+}
+
+.qa .qa-section .qa-left {
+  max-width: 41.66667%;
+  margin-top: 48px;
+  padding: 0 15px;
+}
+
+.qa .qa-section .qa-left .img-container {
+  position: sticky;
+  top: 80px;
+}
+
+.qa .qa-section .qa-left .img-container img {
+  border-radius: 6px;
+  transition: 0.5s;
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.qa .qa-section .qa-left .img-container img:hover {
+  transform: translateY(-8px);
+}
+
+.qa .qa-section .qa-right {
+  max-width: 58.33333%;
+  padding-left: 48px;
+  padding-right: 15px;
+  margin-top: 48px;
+}
+
+.qa .qa-section .qa-right ul {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.qa .qa-section .qa-right ul li {
+  position: relative;
+  padding: 25px 50px 25px 20px;
+  border: 1px solid #eee;
+  margin: 0 0 15px 0;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.qa .qa-section .qa-right ul li input[type="checkbox"] {
+  position: absolute;
+  cursor: pointer;
+  /* set width height to maxed the box */
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  top: 0;
+  left: 0;
+}
+
+.qa .qa-section .qa-right ul li i {
+  margin-top: 16px;
+  position: absolute;
+  right: 31px;
+  top: 16px;
+  transition: 0.5s;
+}
+
+.qa .qa-section .qa-right ul li i::before {
+  content: "";
+  position: absolute;
+  background-color: black;
+  width: 3px;
+  height: 9px;
+  transition: 0.5s;
+}
+
+.qa .qa-section .qa-right ul li input[type="checkbox"] ~ i::before {
+  transform: translate(-2px, 0) rotate(45deg);
+}
+
+.qa .qa-section .qa-right ul li input[type="checkbox"]:checked ~ i::before {
+  transform: translate(2px, 0) rotate(45deg);
+}
+
+.qa .qa-section .qa-right ul li i::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  width: 3px;
+  height: 9px;
+  transition: 0.5s;
+}
+
+.qa .qa-section .qa-right ul li input[type="checkbox"] ~ i::after {
+  transform: translate(2px, 0) rotate(-45deg);
+}
+
+.qa .qa-section .qa-right ul li input[type="checkbox"]:checked ~ i::after {
+  transform: translate(-2px, 0) rotate(-45deg);
+}
+
+.qa .qa-section .qa-right ul li h2 {
+  font-size: 20px;
+  line-height: 1;
+  font-weight: normal;
+  display: block;
+  margin: 0;
+  cursor: pointer;
+  color: #2c3038;
+}
+
+.qa .qa-section .qa-right ul li p {
+  font-size: 16px;
+  line-height: 24.5px;
+  color: #5a5a5a;
+  overflow: hidden;
+  margin-top: 14px;
+  max-height: 800px;
+  opacity: 1;
+  /* z-index: 2; */
+  /* position: relative; */
+  /* transform: translate(0, 0); */
+  transition: 0.8s;
+}
+
+.qa .qa-section .qa-right ul li input[type="checkbox"]:checked ~ p {
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  transform: translate(0, 40%);
   transition: 0.5s;
 }
 
