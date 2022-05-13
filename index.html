@@ -319,7 +319,7 @@
             sodales quis. Integer sit amet mattis quam.
           </p>
         </div>
-        
+
         <div class="qa-section">
           <div class="qa-left">
             <div class="img-container">
@@ -400,7 +400,55 @@
       </div>
     </section>
 
-    <section class="feature"></section>
+    <section class="feature">
+      <div class="container">
+        <div class="title-section">
+          <h6>FEATURED CASES</h6>
+          <h3>Completed Projects</h3>
+          <p>
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis
+            sodales quis. Integer sit amet mattis quam.
+          </p>
+        </div>
+
+        <div class="project-section">
+          <div class="project-container">
+            <div class="tab">
+              <button
+                class="tablinks"
+                onclick="openProject(event, 'project1')"
+                id="defaultOpen"
+              >
+                Project One
+              </button>
+              <button class="tablinks" onclick="openProject(event, 'project2')">
+                Project Two
+              </button>
+              <button class="tablinks" onclick="openProject(event, 'project3')">
+                Project Three
+              </button>
+            </div>
+
+            <div id="project1" class="tabcontent">
+              <h3>London</h3>
+              <p>London is the capital city of England.</p>
+            </div>
+
+            <div id="project2" class="tabcontent">
+              <h3>Paris</h3>
+              <p>Paris is the capital of France.</p>
+            </div>
+
+            <div id="project3" class="tabcontent">
+              <h3>Tokyo</h3>
+              <p>Tokyo is the capital of Japan.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="testi"></section>
     <section class="ready"></section>
     <footer class="footer"></footer>
@@ -486,6 +534,6 @@
     </script>
 
     <!-- my script -->
-    <script src="" async defer></script>
+    <script src="./js/home.js" async defer></script>
   </body>
 </html>
