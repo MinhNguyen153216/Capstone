@@ -851,12 +851,13 @@ h6 {
 /* Customize plugins here--------------------------------- */
 /* scrollUp */
 #scrollUp {
-  bottom: 20px;
-  right: 20px;
+  bottom: 75px;
+  right: 1px;
   width: 48px;
   height: 46px;
-  background: url(../img/pink-arrow-up.png) no-repeat;
-  border-radius: 8px;
+  background: url(../img/v-arrow-up.png) no-repeat;
+  opacity: 0.8;
+  /* border-radius: 8px; */
 }
 
 /* Reponsive here */
