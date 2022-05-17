@@ -491,8 +491,121 @@
       </div>
     </section>
 
-    <section class="testi"></section>
-    <section class="ready"></section>
+    <section class="testi">
+      <div class="container">
+        <div class="title-section">
+          <h6>OUR CLIENTS TESTIMONIALS</h6>
+          <h3>What People Say</h3>
+          <p>
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis
+            sodales quis. Integer sit amet mattis quam.
+          </p>
+        </div>
+        <div class="carousel-section">
+          <div class="carousel-testi owl-carousel owl-theme">
+            <div class="item">
+              <div class="item-container">
+                <div class="img-circle">
+                  <img src="./img/team3.jpg" alt="" />
+                </div>
+                <div class="message">
+                  <span><i class="fa-solid fa-quote-left"></i></span>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Assumenda corporis deleniti praesentium doloremque.
+                    Repellendus soluta quos nemo quisquam consectetur temporibus
+                    quam obcaecati sapiente quaerat et.
+                  </p>
+                  <div class="name">
+                    <h4>Isabella Mia</h4>
+                    <p>Company name</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item-container">
+                <div class="img-circle">
+                  <img src="./img/team4.jpg" alt="" />
+                </div>
+                <div class="message">
+                  <span><i class="fa-solid fa-quote-left"></i></span>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Assumenda corporis deleniti praesentium doloremque.
+                    Repellendus soluta quos nemo quisquam consectetur temporibus
+                    quam obcaecati sapiente quaerat et.
+                  </p>
+                  <div class="name">
+                    <h4>Benjamin Lucas</h4>
+                    <p>Company name</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item-container">
+                <div class="img-circle">
+                  <img src="./img/team5.jpg" alt="" />
+                </div>
+                <div class="message">
+                  <span><i class="fa-solid fa-quote-left"></i></span>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Assumenda corporis deleniti praesentium doloremque.
+                    Repellendus soluta quos nemo quisquam consectetur temporibus
+                    quam obcaecati sapiente quaerat et.
+                  </p>
+                  <div class="name">
+                    <h4>Oliver Bradley</h4>
+                    <p>Company name</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item-container">
+                <div class="img-circle">
+                  <img src="./img/team6.jpg" alt="" />
+                </div>
+                <div class="message">
+                  <span><i class="fa-solid fa-quote-left"></i></span>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Assumenda corporis deleniti praesentium doloremque.
+                    Repellendus soluta quos nemo quisquam consectetur temporibus
+                    quam obcaecati sapiente quaerat et.
+                  </p>
+                  <div class="name">
+                    <h4>Wiliam James</h4>
+                    <p>Company name</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ready">
+      <div class="container">
+        <div class="title-section">
+          <h3>Ready to build your own brand community?</h3>
+          <p>
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis
+            sodales quis. Integer sit amet mattis quam.
+          </p>
+        </div>
+        <div class="button-section">
+          <button class="btn-hover1">BOOK A DEMO</button>
+          <button class="btn-hover-red">GET STARTED</button>
+        </div>
+      </div>
+    </section>
+
     <footer class="footer"></footer>
 
     <div style="height: 1800px"></div>
@@ -549,6 +662,24 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script>
+      $(document).ready(function () {
+        $(".carousel-testi").owlCarousel({
+          nav: false,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            576: {
+              items: 1,
+            },
+            768: {
+              items: 2,
+            },
+          },
+        });
+      });
+    </script>
 
     <!-- scrollUp -->
     <script
