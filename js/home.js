@@ -1,3 +1,20 @@
+window.onscroll = headerChange;
+
+function headerChange() {
+  document
+    .getElementById("headerID")
+    .classList.toggle("header-change", window.scrollY > 0);
+  document
+    .getElementById("header-barID")
+    .classList.toggle("header-bar-change", window.scrollY > 0);
+}
+
+function togglePage() {
+  document
+    .getElementById("togglePagesID")
+    .classList.toggle("navbar-page-active");
+}
+
 function openProject(evt, projectName) {
   var i, tabcontent, tablinks;
 

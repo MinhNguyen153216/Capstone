@@ -13,6 +13,13 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Nunito:wght@300;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <!-- NotoSans font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <!-- font awesome -->
     <link
       rel="stylesheet"
@@ -55,6 +62,36 @@
     <![endif]-->
 
     <!-- YOUR HTML CODE HERE -->
+    <header id="headerID" class="header">
+      <div class="container">
+        <div id="header-barID" class="header-bar">
+          <div class="logo">
+            <a href="index.html">
+              <i class="fa-regular fa-handshake"></i>
+              Masterwork
+            </a>
+          </div>
+          <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <div class="pages" onclick="togglePage()">
+              <a href="#">Pages <i class="fa-solid fa-angle-down"></i></a>
+              <div id="togglePagesID" class="toggle-pages">
+                <a href="blogspot.html">Blog posts</a>
+                <a href="blogsingle.html">Blog single</a>
+                <a href="index.html">Landing page</a>
+              </div>
+            </div>
+            <a href="contact.html">Contact</a>
+            <button class="btn-hover1">SCHEDULE A DEMO</button>
+          </div>
+          <div class="navbar-toggler">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </header>
     <div style="height: 1800px"></div>
     <div style="height: 1800px"></div>
 
@@ -124,7 +161,7 @@
         $(function () {
           $.scrollUp({
             scrollName: "scrollUp", // Element ID
-            topDistance: "400", // Distance from top before showing element (px)
+            topDistance: "380", // Distance from top before showing element (px)
             topSpeed: 10000, // Speed back to top (ms)
             animation: "fade", // Fade, slide, none
             animationInSpeed: 15000, // Animation in speed (ms)
@@ -137,6 +174,6 @@
     </script>
 
     <!-- my script -->
-    <script src="" async defer></script>
+    <script src="./js/home.js" ></script>
   </body>
 </html>

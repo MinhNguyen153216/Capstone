@@ -62,9 +62,9 @@
     <![endif]-->
 
     <!-- YOUR HTML CODE HERE -->
-    <header class="header">
+    <header id="headerID" class="header">
       <div class="container">
-        <div class="header-bar">
+        <div id="header-barID" class="header-bar">
           <div class="logo">
             <a href="index.html">
               <i class="fa-regular fa-handshake"></i>
@@ -72,10 +72,17 @@
             </a>
           </div>
           <div class="navbar">
-            <a href="index.html">Home</a>
+            <a href="index.html" style="color: #dc4d72">Home</a>
             <a href="about.html">About</a>
             <a href="services.html">Services</a>
-            <a href="#">Pages <i class="fa-solid fa-angle-down"></i></a>
+            <div class="pages" onclick="togglePage()">
+              <a href="#">Pages <i class="fa-solid fa-angle-down"></i></a>
+              <div id="togglePagesID" class="toggle-pages">
+                <a href="blogspot.html">Blog posts</a>
+                <a href="blogsingle.html">Blog single</a>
+                <a href="index.html">Landing page</a>
+              </div>
+            </div>
             <a href="contact.html">Contact</a>
             <button class="btn-hover1">SCHEDULE A DEMO</button>
           </div>
@@ -832,7 +839,7 @@
               items: 1,
             },
             992:{
-              items: 2,
+              items: 1,
             },
           },
         });
