@@ -630,10 +630,10 @@ h6 {
 .feature .item img:hover {
   transform: translateY(-0.5rem);
 }
-.feature-item-margin{
+.feature-item-margin {
   margin-top: 48px;
 }
-.feature-last-button{
+.feature-last-button {
   margin-top: 26px;
   margin-bottom: 0 !important;
 }
@@ -894,20 +894,20 @@ h6 {
     transition: 0.2s;
   }
   /* ------------here-------- */
-  .path{
+  .path {
     margin-top: 70px;
     padding: 10px 0px;
   }
-  .service{
+  .service {
     padding-top: 56px;
   }
-  .service .container{
+  .service .container {
     padding: 0 25px;
   }
-  .service .row{
+  .service .row {
     display: block;
   }
-  .service .left-col{
+  .service .left-col {
     flex: 0 0 100%;
     max-width: 100%;
   }
@@ -922,64 +922,64 @@ h6 {
   .service .item-more {
     padding-top: 0px;
   }
-  .product .container{
+  .product .container {
     padding-top: 0px;
   }
   .title-section h3 {
     line-height: 1;
   }
-  .product{
+  .product {
     padding-bottom: 8px;
   }
-  .product .row{
+  .product .row {
     display: block;
   }
-  .product .item{
+  .product .item {
     flex: 0 0 100%;
     max-width: 100%;
     margin-left: -10px;
     margin-right: -10px;
   }
-  .product .item .item-flex{
+  .product .item .item-flex {
     margin-bottom: 1.5rem;
   }
-  .product .item .item-left-side{
+  .product .item .item-left-side {
     text-align: right;
   }
-  .product .padding-middle-item{
+  .product .padding-middle-item {
     width: 300px;
     margin: auto;
   }
-  .product .item img{
+  .product .item img {
     margin-bottom: 40px;
   }
-  .feature{
+  .feature {
     padding: 0;
   }
-  .feature .title-section{
+  .feature .title-section {
     max-width: 750px;
   }
-  .feature .row{
+  .feature .row {
     display: block;
   }
-  .feature .left-item{
+  .feature .left-item {
     flex: 0 0 100%;
     max-width: 100%;
   }
-  .feature .right-item{
+  .feature .right-item {
     flex: 0 0 100%;
     max-width: 100%;
   }
-  .feature .item{
+  .feature .item {
     padding: 24px;
   }
-  .feature .item h3{
+  .feature .item h3 {
     font-size: 34px;
   }
-  .feature .right-item{
+  .feature .right-item {
     margin-top: 62px;
   }
-  .feature .item button{
+  .feature .item button {
     margin-bottom: 24px;
   }
   /* ------------here-------- */
@@ -1044,8 +1044,28 @@ h6 {
     transition: 0.2s;
   }
   /* ----------here-------- */
-
+  .service .container {
+    padding: 0 30px;
+  }
+  .title-section h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .service .left-col h3 {
+    font-size: 30px;
+    line-height: 1;
+  }
+  .btn-hover-red{
+    padding: 0 20px;
+    line-height: 44px;
+  }
+  .title-section h3 {
+    line-height: 50px;
+  }
   /* ----------here-------- */
+  .footer{
+    padding-top: 24px;
+  }
   .footer .container {
     padding-right: 15px;
     padding-left: 15px;
@@ -1084,8 +1104,30 @@ h6 {
     line-height: 42px;
   }
   /* ------------here----------- */
-
+  .title-section{
+    margin-bottom: 48px !important;
+  }
+  .title-section h2{
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .service .left-col p{
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+  .product{
+    padding-bottom: 25px;
+  }
+  .feature{
+    padding: 48px 0;
+  }
+  .feature .item h3{
+    font-size: 30px;
+  }
   /* ------------here----------- */
+  .footer{
+    padding-top: 48px;
+  }
   .footer .container .row .item-left {
     display: block;
     margin-top: -24px;

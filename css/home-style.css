@@ -1778,6 +1778,9 @@ h6 {
   .ready .container{
     padding: 0 30px;
   }
+  .footer{
+    padding-top: 24px;
+  }
   .footer .container{
     padding-right: 15px;
     padding-left: 15px;
@@ -1790,6 +1793,10 @@ h6 {
   }
   .item-min{
     margin-top: 1.5rem;
+  }
+  .btn-hover-red{
+    padding: 0 20px;
+    line-height: 44px;
   }
 }
 
@@ -1915,6 +1922,9 @@ h6 {
   .testi .carousel-section .item-container p,
   .testi .carousel-section .item-container h4 {
     text-align: center;
+  }
+  .footer{
+    padding-top: 48px;
   }
   .footer .container .row .item-left {
     display: block;
