@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
+    <title>Contact</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Nunito font -->
@@ -11,6 +11,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Nunito:wght@300;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- NotoSans font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <!-- font awesome -->
@@ -44,7 +51,7 @@
       referrerpolicy="no-referrer"
     />
     <!-- home.css -->
-    <link rel="stylesheet" href="./css/contact-style.css" />
+    <link rel="stylesheet" href="./css/services-style.css" />
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -55,6 +62,109 @@
     <![endif]-->
 
     <!-- YOUR HTML CODE HERE -->
+    <header id="headerID" class="header">
+      <div class="container">
+        <div id="header-barID" class="header-bar">
+          <div class="logo">
+            <a href="index.html">
+              <i class="fa-regular fa-handshake"></i>
+              Masterwork
+            </a>
+          </div>
+          <div class="navbar">
+            <a href="index.html" >Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html" >Services</a>
+            <div class="pages" onclick="togglePage()">
+              <a href="#">Pages <i class="fa-solid fa-angle-down"></i></a>
+              <div id="togglePagesID" class="toggle-pages">
+                <a href="blogspot.html">Blog posts</a>
+                <a href="blogsingle.html">Blog single</a>
+                <a href="index.html">Landing page</a>
+              </div>
+            </div>
+            <a href="contact.html" style="color: #dc4d72">Contact</a>
+            <button class="btn-hover1">SCHEDULE A DEMO</button>
+          </div>
+          <div class="navbar-toggler">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="path">
+      
+    </nav>
+
+    <section class="service"></section>
+    <section class="product"></section>
+    <section class="feature"></section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="item-left">
+            <div class="item item-min">
+              <h3>Company</h3>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blogsingle.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </div>
+            <div class="item item-min">
+              <h3>Useful Links</h3>
+              <ul>
+                <li><a href="index.html">Case Studies</a></li>
+                <li><a href="index.html">Our Branches</a></li>
+                <li><a href="index.html">Latest Media</a></li>
+                <li><a href="about.html">About Company</a></li>
+                <li><a href="index.html">Our People</a></li>
+            </div>
+            <div class="item item-min">
+              <h3>Our Services</h3>
+              <ul>
+                <li><a href="index.html">Privacy Policy</a></li>
+                <li><a href="index.html">Our Terms</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blogsingle.html">Landing Page</a></li>
+                <li><a href="index.html">Our People</a></li>
+            </div>
+          </div>
+          <div class="item-right">
+            <h3>Newsletter</h3>
+            <div class="email">
+              <h4>Get latest updates and offers.</h4>
+              <form action="#" method="post">
+                <input type="email" name="email" placeholder="Email Address" required>
+                <button type="submit">Go</button>
+              </form>
+              <p>Sign up for our latest news & articles. We won't give you spam mails.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-section">
+          <div class="left-item">
+            <p>© 2020 Masterwork. All rights reserved | Designed by 
+              <a href="w3layouts.com">W3Layouts</a>
+            </p>
+          </div>
+          <div class="right-item">
+            <ul>
+              <li><a href="#facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li><a href="#linkedin"><i class="fa-brands fa-linkedin-in"></i></a></li>
+              <li><a href="#twitter"><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href="#google"><i class="fa-brands fa-google-plus-g"></i></a></li>
+              <li><a href="#github"><i class="fa-brands fa-github"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <div style="height: 1800px"></div>
     <div style="height: 1800px"></div>
 
@@ -124,7 +234,7 @@
         $(function () {
           $.scrollUp({
             scrollName: "scrollUp", // Element ID
-            topDistance: "400", // Distance from top before showing element (px)
+            topDistance: "380", // Distance from top before showing element (px)
             topSpeed: 10000, // Speed back to top (ms)
             animation: "fade", // Fade, slide, none
             animationInSpeed: 15000, // Animation in speed (ms)
@@ -137,6 +247,6 @@
     </script>
 
     <!-- my script -->
-    <script src="" async defer></script>
+    <script src="./js/home.js" ></script>
   </body>
 </html>
