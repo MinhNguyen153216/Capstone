@@ -15,6 +15,27 @@ function togglePage() {
     .classList.toggle("navbar-page-active");
 }
 
+function togglePage2() {
+  document
+    .getElementById("togglePagesID-2")
+    .classList.toggle("navbar-page-active");
+
+  // document.getElementById("navbar-pageID").toggleAttribute("style","color: #dc4d72");
+  document.getElementById("navbar-pageID").classList.toggle("color-dc4d72");
+}
+
+function navbarToggler() {
+  document.getElementById("iconEqual").classList.toggle("displayHidden");
+  document.getElementById("iconX").classList.toggle("displayHidden");
+  // document.getElementById("header-toggleID").classList.toggle("displayNoneAnimate");
+  document
+    .getElementById("header-toggleID")
+    .classList.toggle("displayBlockAnimate");
+  document
+    .getElementById("header-toggleID")
+    .classList.toggle("responsive-navbar-padding");
+}
+
 function openProject(evt, projectName) {
   var i, tabcontent, tablinks;
 

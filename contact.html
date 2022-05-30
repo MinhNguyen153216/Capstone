@@ -51,7 +51,7 @@
       referrerpolicy="no-referrer"
     />
     <!-- home.css -->
-    <link rel="stylesheet" href="./css/services-style.css" />
+    <link rel="stylesheet" href="./css/contact-style.css" />
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -72,9 +72,9 @@
             </a>
           </div>
           <div class="navbar">
-            <a href="index.html" >Home</a>
+            <a href="index.html">Home</a>
             <a href="about.html">About</a>
-            <a href="services.html" >Services</a>
+            <a href="services.html">Services</a>
             <div class="pages" onclick="togglePage()">
               <a href="#">Pages <i class="fa-solid fa-angle-down"></i></a>
               <div id="togglePagesID" class="toggle-pages">
@@ -86,20 +86,125 @@
             <a href="contact.html" style="color: #dc4d72">Contact</a>
             <button class="btn-hover1">SCHEDULE A DEMO</button>
           </div>
-          <div class="navbar-toggler">
-            <i class="fa-solid fa-bars"></i>
+          <div
+            id="navbarTogglerID"
+            class="navbar-toggler"
+            onclick="navbarToggler()"
+          >
+            <i id="iconEqual" class="fa-solid fa-bars"></i>
+            <i id="iconX" class="fa-solid fa-xmark displayHidden"></i>
           </div>
         </div>
+      </div>
+
+      <div id="header-toggleID" class="responsive-navbar displayNoneAnimate">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <div class="pages" onclick="togglePage2()">
+          <a href="#" id="navbar-pageID">Pages <i class="fa-solid fa-angle-down"></i></a>
+          <div id="togglePagesID-2" class="toggle-pages toggle-pages-2">
+            <a href="blogspot.html">Blog posts</a>
+            <a href="blogsingle.html">Blog single</a>
+            <a href="index.html">Landing page</a>
+          </div>
+        </div>
+        <a href="contact.html" style="color: #dc4d72">Contact</a>
+        <button class="btn-hover1">SCHEDULE A DEMO</button>
       </div>
     </header>
 
     <nav class="path">
-      
+      <div class="container">
+        <a href="index.html">Home</a>
+        »
+        <span>Contact</span>
+      </div>
     </nav>
 
-    <section class="service"></section>
-    <section class="product"></section>
-    <section class="feature"></section>
+    <div style="height: 8px"></div>
+
+    <section class="message">
+      <div class="container">
+        <div class="title-section">
+          <h2>Contact Us</h2>
+        </div>
+        <div class="row">
+          <div class="left-item">
+            <img src="./img/contact.jpg" alt="" />
+          </div>
+          <div class="right-item">
+            <div class="form">
+              <div class="header-section">
+                <h3>Drop us a Message</h3>
+                <p>
+                  Vestibulum ante ipsum primis in faucibus orci luctus et
+                  ultrices turpis sodales quis. Integer sit amet mattis quam.
+                </p>
+              </div>
+
+              <div class="form-section">
+                <form action="#" method="post">
+                  <div class="main-input">
+                    <input
+                      type="text"
+                      name=""
+                      placeholder="Enter your name"
+                      required
+                    />
+                    <input
+                      type="email"
+                      name=""
+                      placeholder="Enter your mail"
+                      required
+                    />
+
+                    <input
+                      type="email"
+                      name=""
+                      placeholder="Subject"
+                      required
+                    />
+                    <textarea
+                      name=""
+                      placeholder="Enter your message"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="text-right">
+                    <button class="btn-hover-red">SEND</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div style="height: 8px"></div>
+
+    <section class="help">
+      <div class="container">
+        <div class="title-section">
+          <h6>GET IN TOUCH</h6>
+          <h3>We’re here to help</h3>
+          <p>
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis
+            sodales quis. Integer sit amet mattis quam.
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <div class="item"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="map"></section>
 
     <footer class="footer">
       <div class="container">
@@ -113,6 +218,7 @@
                 <li><a href="services.html">Services</a></li>
                 <li><a href="blogsingle.html">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
+              </ul>
             </div>
             <div class="item item-min">
               <h3>Useful Links</h3>
@@ -122,6 +228,7 @@
                 <li><a href="index.html">Latest Media</a></li>
                 <li><a href="about.html">About Company</a></li>
                 <li><a href="index.html">Our People</a></li>
+              </ul>
             </div>
             <div class="item item-min">
               <h3>Our Services</h3>
@@ -131,6 +238,7 @@
                 <li><a href="services.html">Services</a></li>
                 <li><a href="blogsingle.html">Landing Page</a></li>
                 <li><a href="index.html">Our People</a></li>
+              </ul>
             </div>
           </div>
           <div class="item-right">
@@ -138,27 +246,46 @@
             <div class="email">
               <h4>Get latest updates and offers.</h4>
               <form action="#" method="post">
-                <input type="email" name="email" placeholder="Email Address" required>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email Address"
+                  required
+                />
                 <button type="submit">Go</button>
               </form>
-              <p>Sign up for our latest news & articles. We won't give you spam mails.</p>
+              <p>
+                Sign up for our latest news & articles. We won't give you spam
+                mails.
+              </p>
             </div>
           </div>
         </div>
 
         <div class="contact-section">
           <div class="left-item">
-            <p>© 2020 Masterwork. All rights reserved | Designed by 
+            <p>
+              © 2020 Masterwork. All rights reserved | Designed by
               <a href="w3layouts.com">W3Layouts</a>
             </p>
           </div>
           <div class="right-item">
             <ul>
-              <li><a href="#facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
-              <li><a href="#linkedin"><i class="fa-brands fa-linkedin-in"></i></a></li>
-              <li><a href="#twitter"><i class="fa-brands fa-twitter"></i></a></li>
-              <li><a href="#google"><i class="fa-brands fa-google-plus-g"></i></a></li>
-              <li><a href="#github"><i class="fa-brands fa-github"></i></a></li>
+              <li>
+                <a href="#facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+              </li>
+              <li>
+                <a href="#twitter"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#google"><i class="fa-brands fa-google-plus-g"></i></a>
+              </li>
+              <li>
+                <a href="#github"><i class="fa-brands fa-github"></i></a>
+              </li>
             </ul>
           </div>
         </div>
@@ -167,7 +294,6 @@
 
     <div style="height: 1800px"></div>
     <div style="height: 1800px"></div>
-
 
     <!-- script -->
     <!-- jquery -->
@@ -247,6 +373,6 @@
     </script>
 
     <!-- my script -->
-    <script src="./js/home.js" ></script>
+    <script src="./js/home.js"></script>
   </body>
 </html>

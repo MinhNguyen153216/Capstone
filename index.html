@@ -86,10 +86,31 @@
             <a href="contact.html">Contact</a>
             <button class="btn-hover1">SCHEDULE A DEMO</button>
           </div>
-          <div class="navbar-toggler">
-            <i class="fa-solid fa-bars"></i>
+          <div
+            id="navbarTogglerID"
+            class="navbar-toggler"
+            onclick="navbarToggler()"
+          >
+            <i id="iconEqual" class="fa-solid fa-bars"></i>
+            <i id="iconX" class="fa-solid fa-xmark displayHidden"></i>
           </div>
         </div>
+      </div>
+
+      <div id="header-toggleID" class="responsive-navbar displayNoneAnimate">
+        <a href="index.html" style="color: #dc4d72">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <div class="pages" onclick="togglePage2()">
+          <a href="#" id="navbar-pageID">Pages <i class="fa-solid fa-angle-down"></i></a>
+          <div id="togglePagesID-2" class="toggle-pages toggle-pages-2">
+            <a href="blogspot.html">Blog posts</a>
+            <a href="blogsingle.html">Blog single</a>
+            <a href="index.html">Landing page</a>
+          </div>
+        </div>
+        <a href="contact.html" >Contact</a>
+        <button class="btn-hover1">SCHEDULE A DEMO</button>
       </div>
     </header>
 

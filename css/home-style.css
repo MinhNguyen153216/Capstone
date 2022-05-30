@@ -333,7 +333,63 @@ h6 {
 .navbar-page-active {
   display: block !important;
 }
-
+/* ---------change header------------- */
+.color-dc4d72{
+  color: #dc4f72 !important;
+}
+.header .navbar-toggler i {
+  line-height: 36px;
+}
+.header .responsive-navbar {
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: white;
+  text-align: center;
+  flex-basis: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  transition: 0.5s;
+  box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
+}
+.responsive-navbar-padding{
+  padding-top: 5px;
+  padding-bottom: 35px;
+}
+.header .responsive-navbar a,
+.header .responsive-navbar .pages {
+  width: 100%;
+  color: #333;
+  opacity: 0.95;
+  padding: 8px 0;
+  text-decoration: none;
+  font-size: 15.5px;
+  cursor: pointer;
+  line-height: 1.5;
+}
+.header .responsive-navbar a i {
+  font-size: 10px;
+  vertical-align: center;
+  padding: 8px 0;
+}
+.header .responsive-navbar button{
+  margin-top: 16px;
+}
+.header .pages .toggle-pages.toggle-pages-2{
+  position: relative;
+  float: none;
+  width: 100%;
+  top: 10px;
+  min-width: 11rem;
+}
+.header .pages .toggle-pages.toggle-pages-2 a{
+  width: 100%;
+}
+/* ----------------------- */
 .carousel {
   background: white;
   background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92)),
@@ -1986,6 +2042,7 @@ h6 {
   }
   .footer .email button {
     width: 20%;
+    padding: 12px 10px;
   }
 }
 
