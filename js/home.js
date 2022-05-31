@@ -25,8 +25,8 @@ function togglePage2() {
 }
 
 function navbarToggler() {
-  document.getElementById("iconEqual").classList.toggle("displayHidden");
-  document.getElementById("iconX").classList.toggle("displayHidden");
+  document.getElementById("iconEqual").classList.toggle("displayNoneAnimate");
+  document.getElementById("iconX").classList.toggle("displayNoneAnimate");
   // document.getElementById("header-toggleID").classList.toggle("displayNoneAnimate");
   document
     .getElementById("header-toggleID")
