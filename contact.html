@@ -76,7 +76,7 @@
             <a href="about.html">About</a>
             <a href="services.html">Services</a>
             <div class="pages" onclick="togglePage()">
-              <a href="#">Pages <i class="fa-solid fa-angle-down"></i></a>
+              <a>Pages <i class="fa-solid fa-angle-down"></i></a>
               <div id="togglePagesID" class="toggle-pages">
                 <a href="blogspot.html">Blog posts</a>
                 <a href="blogsingle.html">Blog single</a>
@@ -102,7 +102,9 @@
         <a href="about.html">About</a>
         <a href="services.html">Services</a>
         <div class="pages" onclick="togglePage2()">
-          <a href="#" id="navbar-pageID">Pages <i class="fa-solid fa-angle-down"></i></a>
+          <a id="navbar-pageID"
+            >Pages <i class="fa-solid fa-angle-down"></i
+          ></a>
           <div id="togglePagesID-2" class="toggle-pages toggle-pages-2">
             <a href="blogspot.html">Blog posts</a>
             <a href="blogsingle.html">Blog single</a>
@@ -198,13 +200,63 @@
 
         <div class="row">
           <div class="col">
-            <div class="item"></div>
+            <div class="item">
+              <div class="icon">
+                <i class="fa-solid fa-location-arrow"></i>
+              </div>
+              <div class="details">
+                <h4>Our head office address:</h4>
+                <p>
+                  8th-block road, cross avenue, Lorem dolor sit, New York, USA
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="details">
+                <h4>Call for help:</h4>
+                <p><a href="tel:+040-123-456-88">+040-123-456-88</a></p>
+                <p><a href="tel:+040-123-456-89">+040-123-456-89</a></p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="icon">
+                <i class="fa-regular fa-envelope-open"></i>
+              </div>
+              <div class="details">
+                <h4>Mail Us for information:</h4>
+                <p>
+                  <a href="mailto:info@masterwork.com">info@masterwork.com</a>
+                </p>
+                <p>
+                  <a href="mailto:masterwork@support.com"
+                    >masterwork@support.com</a
+                  >
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="map"></section>
+    <div style="height: 8px"></div>
+
+    <section class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125377.11635041397!2d106.69750910983522!3d10.884951159937875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752edc3f3043a7%3A0xb490b64157cb9dc1!2sCybersoft!5e0!3m2!1sen!2s!4v1653981677404!5m2!1sen!2s"
+        width="800"
+        height="600"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
 
     <footer class="footer">
       <div class="container">
@@ -291,9 +343,6 @@
         </div>
       </div>
     </footer>
-
-    <div style="height: 1800px"></div>
-    <div style="height: 1800px"></div>
 
     <!-- script -->
     <!-- jquery -->
